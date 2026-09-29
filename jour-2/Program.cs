@@ -8,4 +8,4 @@ var nom = Console.ReadLine();
 Console.WriteLine("Entrez le prix du produit :");
 var prixInput = Console.ReadLine();
 Produit produit = new Produit(reference, nom, double.Parse(prixInput));
-Console.WriteLine($"Produit créé : Référence = {produit.Reference}, Nom = {produit.Nom}, Prix = {produit.Prix} €");
+Console.WriteLine($"Produit créé : Référence = {produit.Reference}, Nom = {produit.Nom}, Prix = {produit.Prix} $");
