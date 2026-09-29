@@ -1,2 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Bonjour tout le monde");
+var name = "World";
+Console.WriteLine("Quel est votre nom ?");
+name = Console.ReadLine();
+Console.WriteLine($"Bonjour {name}");
