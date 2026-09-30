@@ -7,5 +7,12 @@ Console.WriteLine("Entrez le nom du produit :");
 var nom = Console.ReadLine();
 Console.WriteLine("Entrez le prix du produit :");
 var prixInput = Console.ReadLine();
-Produit produit = new Produit(reference, nom, double.Parse(prixInput));
+
+if (!double.TryParse(prixInput, out var prix))
+{
+    Console.WriteLine("Prix invalide. Entrez un nombre.");
+    return;
+}
+
+Produit produit = new Produit(reference, nom, prix);
 Console.WriteLine($"Produit créé : \nRéférence : {produit.Reference}, Nom : {produit.Nom}, Prix : {produit.Prix} $");
