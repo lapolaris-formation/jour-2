@@ -1,0 +1,13 @@
+# Relecteurs par défaut sur l'ensemble du dépôt
+*                       @organisation/developpeurs
+# Code source applicatif
+/src/                   @organisation/developpeurs
+# Fichiers sensibles : workflows et configuration de sécurité
+/.github/               @organisation/responsables
+/.github/workflows/    @organisation/responsables 
+# Politique de sécurité (jour 4)
+/SECURITY.md            @organisation/responsables
+# DLL de fournisseurs versionnées
+/lib/                   @organisation/responsables
+# Documentation technique
+/docs/                  @organisation/responsables
